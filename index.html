@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300&display=swap" rel="stylesheet">
+      <title>Book a trip</title>
+   </head>
+   <body>
+      <div class="heading" id="main_title">
+         <h1>Book your trip now!</h1>
+      </div>
+      <!--Modal start-->
+      <div class="window">
+         <a class="open_modal" href="#open">Сalculate tour</a>
+      </div>
+      <div id="modal" class="modal bounceIn">
+         <div id="close_modal">+</div>
+         <div class="container-window">
+            <div class="container-form">
+               <p class="par-title">Let's find the price of your tour</p>
+               <form>
+                  <p class="par"> Choose your destination</p>
+                  <select id="country">
+                     <option value="600" selected>Prague</option>
+                     <option value="200">Vienna</option>
+                     <option value="100">Paris</option>
+                     <option value="400">London</option>
+                     <option value="500">Barcelona</option>
+                     <option value="300">Rome</option>
+                  </select>
+                  <br>
+                  <p class="par">Choose your hotel class</p>
+                  <select id="hotel">
+                     <option value="210" selected>5 stars</option>
+                     <option value="160">4 stars</option>
+                     <option value="120">3 stars</option>
+                     <option value="80">2 stars</option>
+                  </select>
+                  <br>
+                  <p class="par">Food and drinks</p>
+                  <select id="food">
+                     <option value="30">Only Breakfast</option>
+                     <option value="40">Breakfast and Dinner</option>
+                     <option value="50" selected>All inclusive</option>
+                  </select>
+                  <br>
+                  <p class="par bottom">How many persons?</p>
+                  <p class="par">Adults
+                     <span>
+                     <input class="modal-text" type="number" id="adult" placeholder="How many adults">
+                     </span>
+                  </p>
+                  <br>
+                  <p class="par">*Children half price
+                     <span>
+                     <input class="modal-text" type="number" id="children" placeholder="How many children">
+                     </span>
+                  </p>
+                  <br>
+                  <p class="par" id="par_days">
+                     How many days
+                     <select id="days">
+                        <option value="21">21 days</option>
+                        <option value="14">14 days</option>
+                        <option value="10" selected>10 days</option>
+                        <option value="7">7 days</option>
+                     </select>
+                  </p>
+                  <br>
+                  <div>
+                     <input type="checkbox" id="check" value="350">
+                     <label for="check" class="label">Additional family health insurance</label>
+                  </div>
+                  <br>
+                  <button class="btn-calc">Calculate</button>
+               </form>
+               <div id="showTotalAmountToPay">
+                  <!-- 1 block -->
+                  <div id="adultPrice">
+                     <p>Total price 
+                        <span>$</span>
+                        <span id="dividedAdult"></span>
+                        <span>per adults</span>
+                     </p>
+                  </div>
+                  <!-- 2 block -->
+                  <div id="childrenPrice">
+                     <p>Total price
+                        <span>$</span>
+                        <span id="dividedChildren"></span>
+                        <span>per children</span>
+                     </p>
+                  </div>
+                  <!-- 3 block -->
+                  <div id="totalAmount">
+                     <p>Total price 
+                        <span>$</span>
+                        <span id="familyTotal"></span>
+                        <span>per family</span>
+                     </p>
+                  </div>
+               </div>
+               <div class="reset_btn">
+                  <button class="reset">Reset</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Modal end-->
+     <div class="container">
+         <div class="selected item one">
+            <h4>Prague</h4>
+            <p class="parag">Prague, capital city of the Czech Republic, is bisected by the Vltava River. Nicknamed “the City of a Hundred Spires,” it's known for its Old Town Square, the heart of its historic core.</p>
+            <p class="price">from 800$</p>
+         </div>
+         <div class="item two">
+            <h4>Vienna</h4>
+            <p class="parag">Vienna, Austria’s capital, lies in the country’s east on the Danube River. Its artistic and intellectual legacy was shaped by residents including Mozart, Beethoven and Sigmund Freud.</p>
+            <p class="price">from 900$</p>
+         </div>
+         <div class="item three">
+            <h4>Paris</h4>
+            <p class="parag">Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine.</p>
+            <p class="price">from 1000$</p>
+         </div>
+         <div class="item four">
+            <h4>London</h4>
+            <p class="parag">London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times. At its centre stand the imposing Houses of Parliament.</p>
+            <p class="price">from 1500$</p>
+         </div>
+         <div class="item five">
+            <h4>Barcelona</h4>
+            <p class="parag">Barcelona, the cosmopolitan capital of Spain’s Catalonia region, is known for its art and architecture. The fantastical Sagrada Família church and other modernist landmarks designed by Antoni Gaudí dot the city. </p>
+            <p class="price">from 1200$</p>
+         </div>
+         <div class="item six">
+            <h4>Rome</h4>
+            <p class="parag">Rome is the capital city of Italy. It is also the capital of the Lazio region, the centre of the Metropolitan City of Rome Capital, and a special comune named Comune di Roma Capitale.</p>
+            <p class="price">from 1000$</p>
+         </div>
+      </div>
+      <div class="heading">
+         <h3 class="send_title">Send us a message!</h3>
+      </div>
+      <form
+         action="https://formspree.io/f/mwpkkkqz"
+         method="POST">
+         <input type="hidden" name="_language" value="'us">
+         <div class="heading">
+            <label>
+            Your email:
+            <input class="text-input" type="email" name="email" placeholder="Your email..." required="">
+            </label>
+         </div>
+         <div class="heading">
+            <label>
+            Your message:
+            <input class="text-input" type="text" name="message" placeholder="Type your message..." required="">
+            </label>
+         </div>
+         <br>
+         <!-- your other form fields go here -->
+         <div class="heading">
+            <button class="btn_send" type="submit">Send</button>
+         </div>
+      </form>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+      <script src="script.js"></script>
+   </body>
+</html>

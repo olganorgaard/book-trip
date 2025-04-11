@@ -1,0 +1,344 @@
+body {
+	background: #bddce4;
+	font-family: "Poppins", serif;
+}
+
+.heading {
+	display: flex;
+	justify-content: center;
+}
+
+h1 {
+	font-family: "Poppins", serif;
+	font-size: 60px;
+}
+
+h3 {
+	font-family: "Poppins", serif;
+	font-size: 40px;
+}
+
+.container {
+	display: flex;
+}
+
+.btn_send {
+	background-color: #00adb5;
+	font-family: "Poppins", serif;
+	font-size: 20px;
+	border-radius: 15px;
+	flex: 0.4;
+    margin-bottom:30px;
+}
+
+.item {
+	height: 90vh;
+	background-size: cover;
+	background-position: center;
+	font-family: "Poppins", serif;
+	font-weight: 300;
+	flex: 1;
+	margin: 5px;
+	position: relative;
+	border-radius: 20px;
+}
+
+h4 {
+	position: absolute;
+	top: 15px;
+	left: 40px;
+	background-color: rgba(5, 5, 5, 0);
+	color: #000000;
+	font-size: 0;
+}
+
+.parag {
+	position: absolute;
+	top: 100px;
+	left: 40px;
+	background-color: hwb(70 96% 2% / 0.666);
+	color: #000000;
+	font-size: 0;
+}
+
+.price {
+	position: absolute;
+	bottom: 40px;
+	left: 40px;
+	background-color: hwb(70 96% 2% / 0.666);
+	color: #000000;
+	font-size: 0;
+
+}
+
+.selected {
+	flex: 4;
+}
+
+.selected h4 {
+	font-size: 40px;
+	transition: all 1s ease-in;
+
+}
+
+.selected .parag {
+	font-size: 16px;
+	transition: all 1s ease-in;
+	margin-top: 30px;
+  margin-right:15px;
+  padding: 15px 15px;
+}
+
+.selected .price {
+	font-size: 25px;
+	transition: all 1s ease-in;
+  padding: 5px 5px;
+}
+
+label {
+	font-family: "Poppins", serif;
+	font-size: 20px;
+    padding-bottom:20px;
+}
+
+.label {
+	font-family: "Poppins", serif;
+	font-size: 18px;
+}
+
+.text-input {
+	background-color: #bddce4;
+	border: none;
+	padding: 12px 20px;
+	border-bottom: 1px solid black;
+  font-size:16px;
+}
+
+.one {
+	background-image: url('https://cdn.glitch.global/5395bdd5-5607-4407-8eb2-c536bdfc638f/praga.jpg?v=1736318199879');
+}
+
+.two {
+	background-image: url('https://cdn.glitch.global/5395bdd5-5607-4407-8eb2-c536bdfc638f/vienna.jpg?v=1736318205320');
+}
+
+.three {
+	background-image: url('https://cdn.glitch.global/5395bdd5-5607-4407-8eb2-c536bdfc638f/paris.jpg?v=1736318210943');
+}
+
+.four {
+	background-image: url('https://cdn.glitch.global/5395bdd5-5607-4407-8eb2-c536bdfc638f/london.jpg?v=1736318431354');
+}
+
+.five {
+	background-image: url('https://cdn.glitch.global/5395bdd5-5607-4407-8eb2-c536bdfc638f/barcelona.jpg?v=1736318435074');
+}
+
+.six {
+	background-image: url('https://cdn.glitch.global/5395bdd5-5607-4407-8eb2-c536bdfc638f/rome.jpg?v=1736318532935');
+}
+
+/*Modal window*/
+.modal {
+	display: none;
+	background-color: rgba(0, 0, 0, 0.887);
+	height: 220%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 1;
+	right: 0;
+
+	z-index: 9999;
+}
+
+.modal_vis {
+	display: block;
+}
+
+#close_modal {
+	color: #00adb5;
+	font-size: 40px;
+	font-weight: bold;
+	font-family: Times, sans-serif;
+	border-radius: 50%;
+	border: 4px solid #00adb5;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	margin: 20px;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	transform: rotate(45deg);
+	transition: all 0.6s;
+	box-sizing: content-box;
+}
+
+#close_modal:hover {
+	color: #FFFFFF;
+	transform: rotate(135deg);
+}
+
+.window {
+	display: flex;
+	justify-content: center;
+}
+
+.open_modal {
+	flex: 0.4;
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 15px;
+	background-color: #00adb5;
+	color: black;
+	margin: 40px 20px;
+	font-size: 20px;
+	font-family: "Poppins", serif;
+	border: 2px solid black;
+
+}
+
+.container-window {
+	display: flex;
+	justify-content: center;
+}
+
+.container-form {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #00adb5;
+	color: white;
+	overflow: hidden;
+	color: white;
+	height: auto;
+	width: 400px;
+	padding: 70px;
+	border-radius: 50px;
+	margin-top: 100px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+    padding-bottom: 45px;
+}
+
+
+.par-title {
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.par {
+	font-size: 18px;
+	margin: 0;
+}
+
+.modal-text {
+	font-size: 15px;
+}
+
+option {
+	font-size: 15px;
+}
+
+select {
+	font-size: 18px;
+}
+
+.bottom {
+	margin-bottom: 10px;
+
+}
+
+#par_days {
+	margin-bottom: 15px;
+}
+
+.btn-calc {
+	font-size: 18px;
+	font-weight: 500;
+	margin: 10px 0;
+	background-color: #00adb5;
+	color: white;
+}
+
+#totalAmount {
+	border: 1px solid #00adb5;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 18px;
+}
+
+.reset_btn {
+	display: flex;
+	flex-direction: column;
+}
+
+.reset {
+	font-size: 18px;
+	font-weight: 500;
+	margin: 10px 0;
+	background-color: #00adb5;
+	color: white;
+}
+
+#food {
+	margin-bottom: 10px;
+}
+
+/*Mobile*/
+@media all and (max-width: 1130px) {
+	h1 {
+		font-size: 30px;
+	}
+
+	.open_modal {
+		font-size: 18px;
+	}
+
+	.container {
+		flex-direction: column;
+		height: 100vh;
+	}
+
+	.selected .parag {
+		font-size: 12px;
+    margin-top: 5px;
+  padding: 5px 10px;
+	}
+
+	.selected h4 {
+		font-size: 25px;
+	}
+
+	.selected .price {
+		font-size: 15px;
+		bottom: 10px;
+	}
+
+	h3 {
+		font-size: 25px;
+	}
+
+	.btn_send {
+		border: 2px solid black;
+		color: black;
+	}
+    .btn-calc {
+        margin: 1px 0;  
+    }
+  #main_title{
+    margin-bottom:-30px;
+  }
+  .text-input {
+	padding: 12px 15px;
+  font-size:15px;
+}
+}
