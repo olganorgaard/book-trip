@@ -1,7 +1,7 @@
 <h1>🌍✈️🏖️  Book a Trip application</h1>
 <p>Book a Trip is a family-friendly travel app that lets you explore destinations and check trip prices for the whole family—making vacation planning easy and stress-free!</p>
 <br><h2> 🚀 Live Demo </h2>
-<p>Check it out live here: <a href="https://book-europe-trip.glitch.me/">https://book-europe-trip.glitch.me/</a> </p>
+<p>Check it out live here: <a href="https://book-europe-trip.netlify.app/">https://book-europe-trip.netlify.app/</a> </p>
 <br><h2> 📌 Setup Instructions </h2>
 
 1. Clone the repository:
