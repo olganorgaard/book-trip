@@ -43,6 +43,10 @@ h3 {
 	border-radius: 20px;
 }
 
+.item:hover{
+	cursor: pointer;
+}
+
 h4 {
 	position: absolute;
 	top: 15px;
@@ -115,27 +119,27 @@ label {
 }
 
 .one {
-	background-image: url('https://cdn.glitch.global/5395bdd5-5607-4407-8eb2-c536bdfc638f/praga.jpg?v=1736318199879');
+	background-image: url(img/praga.webp);
 }
 
 .two {
-	background-image: url('https://cdn.glitch.global/5395bdd5-5607-4407-8eb2-c536bdfc638f/vienna.jpg?v=1736318205320');
+	background-image: url(img/vienna.webp);
 }
 
 .three {
-	background-image: url('https://cdn.glitch.global/5395bdd5-5607-4407-8eb2-c536bdfc638f/paris.jpg?v=1736318210943');
+	background-image: url(img/paris.webp);
 }
 
 .four {
-	background-image: url('https://cdn.glitch.global/5395bdd5-5607-4407-8eb2-c536bdfc638f/london.jpg?v=1736318431354');
+	background-image: url(img/london.webp);
 }
 
 .five {
-	background-image: url('https://cdn.glitch.global/5395bdd5-5607-4407-8eb2-c536bdfc638f/barcelona.jpg?v=1736318435074');
+	background-image: url(img/barcelona.webp);
 }
 
 .six {
-	background-image: url('https://cdn.glitch.global/5395bdd5-5607-4407-8eb2-c536bdfc638f/rome.jpg?v=1736318532935');
+	background-image: url(img/rome.webp);
 }
 
 /*Modal window*/
